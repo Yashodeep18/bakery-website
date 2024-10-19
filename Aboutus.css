@@ -1,0 +1,414 @@
+.contener {
+    top: 0%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Space between each child div */
+    align-items: flex-start;
+    /* Align items at the top */
+    padding: 10px;
+    /* Optional: adds some space inside the container */
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contener a {
+    text-decoration: none;
+    color: #003135;
+}
+
+.contener a:hover {
+    color: #dea34a;
+}
+
+.contener ul {
+    margin-top: 40px;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    margin-right: 80px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.cont1 {
+    flex: 2;
+    /* Makes this div take more space */
+    padding-bottom: 70px;
+    margin-left: 50px;
+}
+
+.cout2 img {
+    height: 10px;
+    width: 10px;
+}
+
+.cont3 {
+    padding-bottom: 95px;
+    flex: 2;
+    margin-left: 70px;
+}
+
+
+/* start dropdown */
+
+.page-button {
+    position: relative;
+    /* Position for the dropdown */
+}
+
+.page-button .dropdown {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    background-color: #ffffff;
+    /* Background for dropdown */
+    z-index: 1;
+    bottom: 1px;
+}
+
+.page-button:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.page-button .dropdown li {
+    display: block;
+    /* Stack dropdown items vertically */
+}
+
+.page-button .dropdown li a {
+    width: 50px;
+    padding: 10px;
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+}
+
+.page-button .dropdown li a:hover {
+    color: #dea34a;
+}
+
+
+/* end dropdown */
+
+.About {
+    width: auto;
+    height: 500px;
+}
+
+.About img {
+    max-width: 1550px;
+    opacity: 70%;
+}
+
+.About_txt {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome h1 {
+    font-size: 50px;
+}
+
+.welcome {
+    margin-top: 35px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+.grass {
+    text-align: center;
+}
+
+.grass img {
+    max-width: 120px;
+}
+
+.info {
+    margin-top: 80px;
+    display: flex;
+    gap: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.info1,
+.info2,
+.info3 {
+    height: 400px;
+    width: 400px;
+}
+
+.photo1,
+.photo2,
+.photo3 {
+    margin-left: 135px;
+}
+
+.info1text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.info2text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.info3text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.shef {
+    display: flex;
+}
+
+.shefinfo {
+    width: 700px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-right: 300px;
+    padding-top: 100px;
+}
+
+.shefinfo p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.shefinfo h5 {
+    margin-bottom: 30px;
+}
+
+.number {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 160px;
+    background-color: rgba(118, 118, 118, 0.1);
+    border-radius: 10px;
+}
+
+.number div {
+    width: 300px;
+    height: 250px;
+}
+
+.number img {
+    max-width: 120px;
+    filter: invert(25%);
+}
+
+.number img:hover {
+    transform: scale(1.1);
+}
+
+.number p {
+    font-size: 30px;
+}
+
+.number h2 {
+    filter: invert(50%);
+    margin-bottom: 30px;
+}
+
+.number1::after {
+    content: 30;
+    color: #dea34a;
+}
+
+.work {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.chef_div {
+    width: 100%;
+    height: 1070px;
+}
+
+.chef1,
+.chef2 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-left: 120px;
+}
+
+.chef2 {
+    margin-top: 70px;
+}
+
+
+/* chef1_photo1*/
+
+.chef1_photo1 {
+    display: flex;
+}
+
+.chef1_img1 img {
+    height: 500px;
+}
+
+.chef1_text1 {
+    margin-left: 40px;
+}
+
+.social1 {
+    opacity: 50%;
+    margin-top: 240px;
+}
+
+.chef1_text1 p {
+    opacity: 50%;
+}
+
+
+/* chef1_photo2*/
+
+.chef1_photo2 {
+    display: flex;
+    margin-left: 60px;
+}
+
+.chef1_img2 img {
+    height: 500px;
+}
+
+.chef1_text2 {
+    margin-left: 40px;
+}
+
+.social2 {
+    opacity: 50%;
+    margin-top: 240px;
+}
+
+.chef1_text2 p {
+    opacity: 50%;
+}
+
+
+/* chef2_photo1*/
+
+.chef2_photo1 {
+    display: flex;
+}
+
+.chef2_img1 img {
+    height: 500px;
+}
+
+.chef2_text1 {
+    margin-left: 40px;
+}
+
+.social3 {
+    opacity: 50%;
+    margin-top: 240px;
+}
+
+.chef2_text1 p {
+    opacity: 50%;
+}
+
+
+/* chef2_photo2*/
+
+.chef2_photo2 {
+    display: flex;
+    margin-left: 60px;
+}
+
+.chef2_img2 img {
+    height: 500px;
+}
+
+.chef2_text2 {
+    margin-left: 40px;
+}
+
+.social4 {
+    opacity: 50%;
+    margin-top: 209px;
+}
+
+.chef2_text2 p {
+    opacity: 50%;
+}
+
+.lastdiv {
+    margin-top: 100px;
+    display: flex;
+    background-color: #003135;
+}
+
+.lastdiv1,
+.lastdiv2,
+.lastdiv3 {
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.lastdiv1 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 p {
+    margin: 10px 0;
+}
+
+.lastdiv3 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 button {
+    border-color: #dea34a;
+    color: #dea34a;
+}
+
+.lastdiv2 button:hover {
+    background-color: #dea34a;
+    color: rgb(255, 255, 255);
+}

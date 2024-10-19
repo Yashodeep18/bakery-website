@@ -1,0 +1,572 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url('bakery_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: sticky;
+}
+
+.contener {
+    top: 0%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Space between each child div */
+    align-items: flex-start;
+    /* Align items at the top */
+    padding: 10px;
+    /* Optional: adds some space inside the container */
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contener a {
+    text-decoration: none;
+    color: #003135;
+}
+
+.contener a:hover {
+    color: #dea34a;
+}
+
+.contener ul {
+    margin-top: 40px;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    margin-right: 80px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.cont1 {
+    flex: 2;
+    /* Makes this div take more space */
+    padding-bottom: 70px;
+    margin-left: 50px;
+}
+
+.cout2 img {
+    height: 10px;
+    width: 10px;
+}
+
+.cont3 {
+    padding-bottom: 95px;
+    flex: 2;
+    margin-left: 70px;
+}
+
+
+/* start dropdown */
+
+.page-button {
+    position: relative;
+    /* Position for the dropdown */
+}
+
+.page-button .dropdown {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    background-color: #ffffff;
+    /* Background for dropdown */
+    z-index: 1;
+    bottom: 1px;
+}
+
+.page-button:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.page-button .dropdown li {
+    display: block;
+    /* Stack dropdown items vertically */
+}
+
+.page-button .dropdown li a {
+    width: 50px;
+    padding: 10px;
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+}
+
+.page-button .dropdown li a:hover {
+    color: #dea34a;
+}
+
+
+/* end dropdown */
+
+#imgs {
+    margin-top: 160px;
+    position: relative;
+    z-index: 1;
+    width: 1530px;
+    background-color: rgb(255, 255, 255)
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 250px;
+}
+
+.img2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Offset by half its size to center it */
+    max-width: 40%;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Offset by half its size to center it */
+    max-width: 40%;
+    /* Optional: adjust size as needed */
+    background-color: transparent;
+    font-size: 50px;
+}
+
+#cart {
+    height: 80px;
+    width: 1530px;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cart_butt {
+    margin-top: 20px;
+    margin-left: 650px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    border-color: #F4E1C4;
+    color: #dea34a;
+}
+
+.cart_butt:hover {
+    background-color: #dea34a;
+    color: white;
+}
+
+.opacity {
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+}
+
+.welcome {
+    margin-top: 35px;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+}
+
+.grass {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.grass img {
+    max-width: 75px;
+}
+
+.info {
+    margin-top: 80px;
+    display: flex;
+    gap: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.info1,
+.info2,
+.info3 {
+    height: 400px;
+    width: 400px;
+}
+
+.photo1,
+.photo2,
+.photo3 {
+    margin-left: 135px;
+}
+
+.info1text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.info2text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.info3text {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+
+.shef {
+    display: flex;
+}
+
+.shefinfo {
+    width: 700px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-right: 300px;
+    padding-top: 100px;
+}
+
+.shefinfo p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.shefinfo h5 {
+    margin-bottom: 30px;
+}
+
+.deal1,
+.deal2 {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+}
+
+.Aitem1,
+.Aitem2,
+.Aitem3,
+.Bitem1,
+.Bitem2,
+.Bitem3 {
+    height: 200px;
+    width: 500px;
+    display: flex;
+}
+
+.deal1photo1 {
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+#deal1p1_1 {
+    opacity: 0;
+}
+
+.Aitem1:hover #deal1p1_1 {
+    opacity: 1;
+}
+
+.Aitem1:hover #deal1p1 {
+    opacity: 0;
+}
+
+.deal1photo1:hover {
+    transform: scale(1.1);
+}
+
+.deal1photo2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#deal1p2_2 {
+    opacity: 0;
+}
+
+.Aitem2:hover #deal1p2_2 {
+    opacity: 1;
+}
+
+.Aitem2:hover #deal1p2 {
+    opacity: 0;
+}
+
+.deal1photo2:hover {
+    transform: scale(1.1);
+}
+
+.deal1photo3 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#deal1p3_3 {
+    opacity: 0;
+}
+
+.Aitem3:hover #deal1p3_3 {
+    opacity: 1;
+}
+
+.Aitem3:hover #deal1p3 {
+    opacity: 0;
+}
+
+.deal1photo3:hover {
+    transform: scale(1.1);
+}
+
+.deal2photo1 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#deal2p1_1 {
+    opacity: 0;
+}
+
+.Bitem1:hover #deal2p1_1 {
+    opacity: 1;
+}
+
+.Bitem1:hover #deal2p1 {
+    opacity: 0;
+}
+
+.deal2photo1:hover {
+    transform: scale(1.1);
+}
+
+.deal2photo2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#deal2p2_2 {
+    opacity: 0;
+}
+
+.Bitem2:hover #deal2p2_2 {
+    opacity: 1;
+}
+
+.Bitem2:hover #deal2p2 {
+    opacity: 0;
+}
+
+.deal2photo2:hover {
+    transform: scale(1.1);
+}
+
+.deal2photo3 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#deal2p3_3 {
+    opacity: 0;
+}
+
+.Bitem3:hover #deal2p3_3 {
+    opacity: 1;
+}
+
+.Bitem3:hover #deal2p3 {
+    opacity: 0;
+}
+
+.deal2photo2:hover {
+    transform: scale(1.1);
+}
+
+.deal2photo3:hover {
+    transform: scale(1.1);
+}
+
+.deal1photoinfo {
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.deal {
+    background-image: url('https://images.unsplash.com/photo-1529511582893-2d7e684dd128?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 68vh;
+    margin: 0;
+    position: sticky;
+}
+
+.Historytitel {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.History {
+    display: flex;
+    padding-left: 65px;
+    padding-top: 50px;
+}
+
+.Historytext {
+    text-align: center;
+}
+
+.history1,
+.history2,
+.history3 {
+    height: 550px;
+    width: 470px;
+    /* border: 1px solid black; */
+}
+
+.historyphoto {
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+}
+
+.historyphoto:hover {
+    transform: scale(0.9);
+}
+
+.totalhistory {
+    background-color: rgb(255, 255, 255);
+}
+
+.delivery {
+    background-image: url('https://images.stockcake.com/public/1/b/3/1b3b7e6a-f88d-4bff-a895-e5ce9595582c_large/charming-bakery-interior-stockcake.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 69vh;
+    margin: 0;
+    position: sticky;
+}
+
+.delcontent {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 50%;
+    margin-left: 350px;
+}
+
+.delinfo,
+.order {
+    color: rgb(255, 255, 255);
+}
+
+.delinfo {
+    margin-top: 60px;
+    margin-left: 20px;
+    text-align: center;
+    display: grid;
+}
+
+.order {
+    margin-top: 60px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#submit {
+    height: 30px;
+    width: 60px;
+    color: #dea34a;
+    border-color: #dea34a;
+    border-radius: 20px;
+}
+
+#submit:hover {
+    color: rgb(255, 255, 255);
+    background-color: #dea34a;
+}
+
+.lastdiv {
+    display: flex;
+    background-color: #003135;
+}
+
+.lastdiv1,
+.lastdiv2,
+.lastdiv3 {
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.lastdiv1 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 p {
+    margin: 10px 0;
+}
+
+.lastdiv3 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 button {
+    border-color: #dea34a;
+    color: #dea34a;
+}
+
+.lastdiv2 button:hover {
+    background-color: #dea34a;
+    color: rgb(255, 255, 255);
+}

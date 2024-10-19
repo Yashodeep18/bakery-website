@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.contener {
+    top: 0%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Space between each child div */
+    align-items: flex-start;
+    /* Align items at the top */
+    padding: 10px;
+    /* Optional: adds some space inside the container */
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contener a {
+    text-decoration: none;
+    color: #003135;
+}
+
+.contener a:hover {
+    color: #dea34a;
+}
+
+.contener ul {
+    margin-top: 40px;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    margin-right: 80px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.cont1,
+.cont2,
+.cont3 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.cont1 {
+    flex: 2;
+    /* Makes this div take more space */
+    padding-bottom: 70px;
+    margin-left: 50px;
+}
+
+.cout2 img {
+    height: 10px;
+    width: 10px;
+}
+
+.cont3 {
+    padding-bottom: 95px;
+    flex: 2;
+    margin-left: 70px;
+}
+
+
+/* start dropdown */
+
+.page-button {
+    position: relative;
+    /* Position for the dropdown */
+}
+
+.page-button .dropdown {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    background-color: #ffffff;
+    /* Background for dropdown */
+    z-index: 1;
+    bottom: 1px;
+}
+
+.page-button:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.page-button .dropdown li {
+    display: block;
+    /* Stack dropdown items vertically */
+}
+
+.page-button .dropdown li a {
+    width: 50px;
+    padding: 10px;
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+}
+
+.page-button .dropdown li a:hover {
+    color: #dea34a;
+}
+
+
+/* end dropdown */
+
+header {
+    margin-top: 200px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 50px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.events {
+    padding: 20px;
+}
+
+.event {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.event-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.event-text {
+    max-width: 50%;
+}
+
+.event-img {
+    width: 45%;
+    max-width: 600px;
+    height: 300px;
+    display: block;
+}
+
+.Shipping {
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 350px;
+    background-color: rgba(118, 118, 118, 0.1);
+    display: flex;
+    text-align: center;
+}
+
+.Shipping img {
+    max-width: 150px;
+}
+
+.Shipping h2 {
+    color: #dea34a;
+}
+
+.Shipping div {
+    width: 300px;
+}
+
+.Ship1 {
+    margin-left: 150px;
+}
+
+.lastdiv {
+    margin-top: 50px;
+    display: flex;
+    background-color: #003135;
+}
+
+.lastdiv1,
+.lastdiv2,
+.lastdiv3 {
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.lastdiv1 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 p {
+    margin: 10px 0;
+}
+
+.lastdiv3 p {
+    margin: 10px 0;
+}
+
+.lastdiv2 button {
+    border-color: #dea34a;
+    color: #dea34a;
+}
+
+.lastdiv2 button:hover {
+    background-color: #dea34a;
+    color: rgb(255, 255, 255);
+}
